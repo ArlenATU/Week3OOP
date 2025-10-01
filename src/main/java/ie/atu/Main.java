@@ -30,7 +30,7 @@ public class Main {
                 yield calc.subtract(firstNum, secondNum);
             }
             case "multiply" -> {        //this one is for multiplying
-                yield firstNum * secondNum;
+                yield calc.multiply(firstNum, secondNum);
             }
             case "divide" -> {          //this one is for dividing
                 yield firstNum / secondNum;
