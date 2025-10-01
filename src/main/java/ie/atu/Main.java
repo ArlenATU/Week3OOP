@@ -33,7 +33,7 @@ public class Main {
                 yield calc.multiply(firstNum, secondNum);
             }
             case "divide" -> {          //this one is for dividing
-                yield firstNum / secondNum;
+                yield calc.dividing(firstNum, secondNum);
             }
             default -> {
                 System.out.println("Invalid operation '" + operation +"'"); //default code in case of incorrect input
