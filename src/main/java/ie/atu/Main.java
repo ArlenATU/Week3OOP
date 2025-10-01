@@ -9,7 +9,7 @@ public class Main {
 
         Scanner scan1 = new Scanner(System.in);     //an object of scanner
 
-        System.out.print("Choose an operation (add, subtract, multiply, divide, power, remainder, modulo): ");
+        System.out.print("Choose an operation (add, subtract, multiply, divide, power, remainder): ");
         String operation = scan1.next();    //this variable saves user's input for type of calculation
 
         System.out.println("Please enter a number: ");
@@ -41,9 +41,7 @@ public class Main {
             case "remainder" -> {
                 yield calc.modulo(firstNum, secondNum);
             }
-            case "modulo" -> {
-                yield calc.modulo(firstNum, secondNum);
-            }
+
             default -> {
                 System.out.println("Invalid operation '" + operation +"'"); //default code in case of incorrect input
                 validOperation = false;
