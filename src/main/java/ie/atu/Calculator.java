@@ -15,4 +15,12 @@ public class Calculator {
     public int dividing(int a, int b) {
         return a / b;
     }
+
+    public double power(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
+
+    public int modulo(int a, int b) {
+        return a % b;
+    }
 }
